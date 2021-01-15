@@ -10,6 +10,16 @@ from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import subprocess
+
+pip_install = "pip install "
+subprocess.call(pip_install+"numpy")
+subprocess.call(pip_install+"pandas")
+subprocess.call(pip_install+"matplotlib")
+subprocess.call(pip_install+"seaborn")
+subprocess.call(pip_install+"tkinter")
+subprocess.call(pip_install+"sklearn")
+
 
 try:
     Wholesale=pd.read_csv("wholesale customer data.csv")
